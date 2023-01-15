@@ -42,7 +42,7 @@
   hosts: all
   connection: local
   tasks:
-      - name: Access fact
-        ansible.builtin.debug:
+    - name: Access fact
+      ansible.builtin.debug:
         msg: Anisble Host name == {{ansible_fqdn}}
 
