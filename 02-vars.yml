@@ -12,10 +12,10 @@
   hosts: all
   connection: local
   tasks:
-- name: Declare and access a variable
-  ansible.builtin.debug:
-   msg: URL == {{URL}}
-   vars:
-   URL: task.example.com
+    - name: Declare and access a variable
+      ansible.builtin.debug:
+        msg: URL == {{URL}}
+      vars:
+        URL: task.example.com
 
 
